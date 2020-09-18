@@ -1,0 +1,355 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	font-family: 'Roboto Condensed', Helvetica, Arial, sans-serif;
+	font-size: 14px;
+	line-height: 1.5em;
+	background: white;
+	color: black;
+}
+
+/*Menu bar*/
+#main-menu {
+    padding-top: 10em;
+    background-image: linear-gradient(to bottom, rgb(160, 160, 160), rgba(255, 255, 255, 0));
+    
+}
+
+#main-menu ul {
+	padding: 0.5em 0;
+	text-align: center;
+}
+
+#main-menu li {
+	list-style: none;
+	padding: 0.1em 0.5em;
+}
+
+img[src="images/logo.png"]{
+    padding-right: 20px;
+    padding-bottom: 0.5em;
+}
+
+#main-menu a {
+	display: block;
+	color: white;
+	text-decoration: none;
+	padding: 0.25em 1em;
+	text-transform: uppercase;
+    border-radius: 3px;
+    margin-top:0.2em;   
+	text-shadow: rgba(255, 255, 255, 0.5) 0 1px 0;
+}
+
+
+
+#main-menu a:hover {
+    background: white;
+    color:black;
+}
+
+/*Constantly playing video*/
+#myVideo {
+    position: fixed;
+    z-index: -1;
+    right: 0;
+    bottom: 0;
+    min-width: 100%; 
+    height: auto;
+    filter: brightness(25%);
+}
+
+/*Page header */
+#page-header {
+	background-size: cover;
+    background-position: center center;
+	text-align: center;
+	font-size: 1.4em;
+    line-height: 1.5em;
+    
+}
+
+
+
+#page-header > p{
+    
+    margin-bottom: 1.5em;
+	font-size: 1.25em;
+    line-height: 1.5em;
+    color:yellow;
+    display:none;
+}
+
+
+
+
+
+/*Blog styles*/
+#blog-container{
+    background-color:rgba(0, 0, 0, 0.6);
+    text-align: left;
+    padding-left: 0;
+    padding-right: 0;
+    margin-top: 2.5em;
+    margin-bottom: 9em;
+    padding:2em;
+    height:auto;
+    min-height: 70vh;
+    overflow: hidden;
+}
+
+#click-me{
+    display: none;
+}
+
+.arrow {
+    border: solid white;
+    border-width: 0 3px 3px 0;
+    display: inline-block;
+    padding: 3px;
+  }
+
+.down {
+    transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+}
+
+#blog-container  >  p{
+    padding-bottom: 3px;
+}  
+
+#blog-container #blog-title{
+   padding-top:65px;
+   padding-bottom: 65px;
+   text-align: left;
+   font-size: 2.2em;
+  
+}
+
+
+#blog-container{
+    color:white;
+    
+}
+
+#blog-wrap{
+    display: block;
+}
+
+div >h2{
+    padding-bottom: 0.5em;
+}
+
+#mr-x{
+    display: none;
+}
+
+#mr-x:hover{
+    cursor: pointer;
+    
+}
+
+#img-container{
+    display: block;
+}
+
+#blog-wrap img{
+    padding-bottom: 2em;
+}
+
+
+
+#blog-part-one,#blog-part-two,#blog-part-three,#blog-part-four{
+    padding: 0 2em 2em 2em;
+}
+
+/* The Modal*/
+.modal {
+    display: none; 
+    position: fixed; 
+    z-index: 1; 
+    padding-top: 100px; 
+    left: 0;
+    top: 20%;
+    width: 100%; 
+    height: 100%; 
+    overflow: auto; 
+    background-color: rgb(0,0,0); 
+    background-color: rgba(0,0,0,0.4); 
+}
+  
+  /* Modal Content */
+  .modal-content {
+    background-color: #fefefe;
+    margin: auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+}
+
+  .modal-content p {
+      padding-top:1em;
+}
+  
+/* The Close Button */
+.close {
+    color: #aaaaaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+  
+.close:hover,
+.close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+/* Footer bottom*/
+.contain{
+    background: rgb(59, 58, 58);
+    display: block;
+    height: 50%;
+    text-align: center;
+    
+}
+
+.contain img{
+    padding-bottom: 0.5em;
+}
+
+.headcontain{
+    font-size: 12px;
+    padding: 20px 20px 20px;
+    height: auto;
+}
+
+
+.links ul{
+    display: flex;
+    justify-content: center;
+    padding: 1em;
+}
+
+.links ul li{
+    list-style: none;
+	padding: 0.1em 0.5em;
+}
+
+.links a{
+    text-decoration: none;
+    font-size: 1.5em;
+    color: white;
+    
+    padding:0.5em;
+}
+
+.links a:hover{
+    background: white;
+    color:black;
+    border-radius: 3px;
+}
+
+.fa {
+    padding: 15px;
+    width: 20px;
+    text-align: center;
+    text-decoration: none;
+}
+
+.fa-facebook {
+    background: #3B5998;
+    color: white;
+}
+  
+  /* Twitter */
+.fa-twitter {
+    background: #55ACEE;
+    color: white;
+}
+
+.fa-instagram {
+    background: #125688;
+    color: white;
+  }
+  
+
+
+
+@media only screen and (min-width:770px) {
+    #blog-wrap img{
+        float: left;
+        padding-right: 2em;
+        text-align: left;
+    }
+
+    #blog-container #blog-title{
+        font-size: 3em;
+       
+     }
+
+     .contain{
+        background: rgb(59, 58, 58);
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center; 
+    }   
+}
+
+@media only screen and (min-width:1000px) {
+
+}
+
+@media only screen and (min-width:1170px) {
+
+	body {
+		font-size: 16px;
+		line-height: 1.5em;
+	}
+
+    /* Main Menu */
+    #main-menu {
+        padding-top: 0;
+    }
+
+	#main-menu ul {
+		display: flex;
+		justify-content: center;
+		padding: 0;
+		text-align: left;
+	}
+    #page-header #logo {
+        padding-top: 6.5%;
+        padding-bottom: 2.5%;
+        max-width:100%;
+        height: auto;
+        display: block;
+    }
+    
+	#main-menu li {
+		padding: 0.75em 0.5em;
+    }
+    #page-header {
+		min-height: 100vh;
+	}
+
+	#page-header h1 {
+        width:100%;
+		font-size: 4em;
+    }
+    #page-header > p{
+        background-image: linear-gradient(to bottom, rgba(0,0,0,0.5), rgba(0,0,0,0.5));
+        font-size:2em;
+        display:block;
+    }
+
+    
+
+    
+}

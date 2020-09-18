@@ -1,0 +1,333 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	font-family: 'Roboto Condensed', Helvetica, Arial, sans-serif;
+	font-size: 14px;
+	line-height: 1.5em;
+	background: white;
+	color: black;
+}
+
+/*Menu bar*/
+#main-menu {
+    padding-top: 10em;
+    background-image: linear-gradient(to bottom, rgba(0,0,0,1), rgba(0,0,0,0));
+
+}
+
+#main-menu ul {
+	padding: 0.5em 0;
+	text-align: center;
+}
+
+#main-menu li {
+	list-style: none;
+	padding: 0.1em 0.5em;
+}
+
+img[src="images/logo.png"]{
+    padding-right: 20px;
+    padding-bottom: 0.5em;
+}
+
+#main-menu a {
+	display: block;
+	color: white;
+	text-decoration: none;
+    padding: 0.25em 1em;
+    margin-top:0.2em;
+	text-transform: uppercase;
+	border-radius: 3px;
+	text-shadow: rgba(0,0,0,0.5) 0 1px 0;
+}
+
+
+
+#main-menu a:hover {
+    background: white;
+    color:black;
+}
+
+
+
+/*Page header */
+#page-header {
+	background-size: cover;
+	background-position: center center;
+	text-align: center;
+	font-size: 1.4em;
+    line-height: 1.5em;
+    height: 700px;
+}
+
+#page-header h1 {
+visibility: hidden;
+    
+}
+
+#page-header > p{
+    
+    margin-bottom: 1.5em;
+	font-size: 1.25em;
+    line-height: 1.5em;
+    color:rgb(187, 187, 36);
+    display:none;
+}
+
+
+#page-header #logo {
+    padding-top: 2.5%;
+    padding-bottom: 2.5%;
+    max-width:100%;
+    height: auto;
+    display: none;
+}
+
+#page-header #logo img {
+    max-width: 400px;
+    max-height: 400px;
+    padding: 15px 5px 5px 5px;
+    border-radius: 80%;
+    background-color: rgb(255, 145, 0);
+}
+
+#page-header{
+    box-shadow: 0px 2px 10px 0px rgba(0,0,0,0.2);
+}
+
+/*Image slideshow section*/
+#aquabutton,#junglebutton,#castlebutton{
+    display: none;
+}
+
+
+button:hover{
+    background: rgba(0,0,0,1);
+    color:white;
+    cursor: pointer;
+}
+
+button:focus {
+    outline:0;
+}
+.imageHolder{
+    background: rgb(204, 204, 204);
+}
+
+.imageHolder .jungletext,
+.imageHolder .aquatext,
+.imageHolder .castletext{
+    font-size: 1.25em;
+    padding:1.5em;
+    text-shadow:none;   
+     
+}
+
+
+.imageHolder img{
+    width: 100%;
+    max-width: 2000px;
+    height: 100%;
+    max-height: 450px;
+    object-fit: cover;
+}
+
+button{
+    padding:0.5em;
+    margin-top: 0.5em;
+    visibility: visible;
+}
+
+#jungleplay{
+    width:10%;
+    height:10%;
+}
+
+/* Footer bottom*/
+.contain{
+    background: rgb(59, 58, 58);
+    display: block;
+    height: 50%;
+    text-align: center;
+    
+}
+
+.contain img{
+    padding-bottom: 0.5em;
+}
+
+.headcontain{
+    font-size: 12px;
+    padding: 20px 20px 20px;
+    height: auto;
+}
+
+
+.links ul{
+    display: flex;
+    justify-content: center;
+    padding: 1em;
+}
+
+.links ul li{
+    list-style: none;
+	padding: 0.1em 0.5em;
+}
+
+.links a{
+    text-decoration: none;
+    font-size: 1.5em;
+    color: white;
+    padding:0.5em;
+}
+
+.links a:hover{
+    background: white;
+    color:black;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+.fa {
+    padding: 15px;
+    width: 20px;
+    text-align: center;
+    text-decoration: none;
+}
+
+.fa-facebook {
+    background: #3B5998;
+    color: white;
+}
+  
+.fa-twitter {
+    background: #55ACEE;
+    color: white;
+}
+
+.fa-instagram {
+    background: #125688;
+    color: white;
+  }
+
+
+@media only screen and (min-width:844px) {
+
+	body {
+		font-size: 16px;
+		line-height: 1.5em;
+	}
+
+    /* Main Menu */
+    #main-menu {
+        padding-top: 0;
+    }
+
+	#main-menu ul {
+		display: flex;
+		justify-content: center;
+		padding: 0;
+		text-align: left;
+	}
+    #page-header #logo {
+        padding-top: 6.5%;
+        padding-bottom: 2.5%;
+        max-width:100%;
+        height: auto;
+        display: block;
+    }
+    
+	#main-menu li {
+		padding: 0.75em 0.5em;
+    }
+    #page-header {
+		min-height: 100vh;
+	}
+
+	#page-header h1 {
+        width:100%;
+		font-size: 4em;
+    }
+    #page-header > p{
+        background-image: linear-gradient(to bottom, rgba(0,0,0,0.5), rgba(0,0,0,0.5));
+        font-size:2em;
+        display:block;
+    }
+    .hotels{
+        padding-top: 0.5em;
+    }
+
+    .imageHolder img{
+        width: 100%;
+        max-width: 2000px;
+        height: 100%;
+        max-height: 450px;
+        object-fit: cover;
+    }
+
+    .imageHolder .jungletext{
+        position:absolute;
+        top: 132%;
+        left: 40%;
+        transform: translate(-50%, -50%);
+    }
+
+    .imageHolder .aquatext{
+        position:absolute;
+        top: 180%;
+        left: 40%;
+        transform: translate(-50%, -50%);
+    }
+
+    .imageHolder .castletext{
+        position:absolute;
+        top: 228%;
+        left: 40%;
+        transform: translate(-50%, -50%);
+    }
+    
+    .imageHolder h1{
+        color: white;
+        line-height: 1em;
+        font-weight: 300;
+        width: 100%;
+        padding-bottom: 0.5em;
+
+    }
+
+    .imageHolder p{
+        color: white;
+        font-size: 1.5em;
+        line-height: 1em;
+        font-weight: 300;
+        width: 100%;
+        padding-bottom: 0.5em;
+    }
+
+    button{
+       
+        padding:0.4em;
+        border-radius: 4px;
+        background-color: white;
+        color: black;
+        border: 2px solid black; /* Green */
+    }
+
+    .imageHolder .jungletext,
+    .imageHolder .aquatext,
+    .imageHolder .castletext{
+        background-color: rgba(0,0,0,0.7);
+}
+    .contain{
+        background: rgb(59, 58, 58);
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center; 
+    }   
+
+}
